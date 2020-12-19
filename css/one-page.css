@@ -10,7 +10,7 @@
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+  display:none;
 }
 
 /* Next & previous buttons */
@@ -94,9 +94,10 @@
   to {opacity: 1}
 }
 #header {
-    background-color:wheat;
+    background-color:white;
     border-color: black;
     border-top: 2px ;
+    border: 5px;
     padding: 20px 10px 10px 5px;
 }
 #company-logo{
@@ -104,8 +105,74 @@
     background-color: black;
     align-self: end;
 }
+.content{
+  padding: 10px;
+}
 #nav-bar{
   padding: 5px 5px 5px  5px;
   text-align: center;
-  background-color: white;
+  overflow: hidden;
+  background-color: #333;
 }
+
+
+/* Navbar links */
+#nav-bar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+#nav-bar a:hover{
+  color: black;
+  background-color: bisque;
+}
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.float-main{
+  background-color: beige;
+  width: 90%;
+  float:left;
+}
+.float-tag{
+  width: 10%;
+  float: right;
+  color: #bbb;
+  
+  padding: 5px;
+  writing-mode: vertical-rl;
+  text-orientation:upright;
+  background-color: black;
+}
+
+.pages{
+  padding: 5px 5px 5px 5px;
+  display: -webkit-flex;
+  display: flex;
+  border-color: black;
+  border-width: 10px 5px 10px 5px;
+  height: fit-content;
+  }
+  #map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
