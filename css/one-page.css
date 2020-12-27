@@ -160,7 +160,7 @@
   writing-mode: vertical-rl;
   text-orientation:upright;
   background-color: #312f2f;
-  animation: myMove 4s 6;
+  animation: myMove 5s 2;
 }
 @keyframes myMove{
   50% {transform: rotate(90deg);}
